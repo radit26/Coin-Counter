@@ -236,6 +236,7 @@
             this.boxTenPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxTenPence.TabIndex = 7;
             this.boxTenPence.TabStop = false;
+            this.boxTenPence.Click += new System.EventHandler(this.boxTenPence_Click);
             // 
             // boxFivePence
             // 
@@ -248,6 +249,7 @@
             this.boxFivePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxFivePence.TabIndex = 6;
             this.boxFivePence.TabStop = false;
+            this.boxFivePence.Click += new System.EventHandler(this.boxFivePence_Click);
             // 
             // boxTwoPounds
             // 
@@ -260,6 +262,7 @@
             this.boxTwoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxTwoPounds.TabIndex = 12;
             this.boxTwoPounds.TabStop = false;
+            this.boxTwoPounds.Click += new System.EventHandler(this.boxTwoPounds_Click);
             // 
             // boxFiftyPence
             // 
@@ -272,6 +275,7 @@
             this.boxFiftyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxFiftyPence.TabIndex = 11;
             this.boxFiftyPence.TabStop = false;
+            this.boxFiftyPence.Click += new System.EventHandler(this.boxFiftyPence_Click);
             // 
             // boxTwentyPence
             // 
@@ -284,6 +288,7 @@
             this.boxTwentyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxTwentyPence.TabIndex = 10;
             this.boxTwentyPence.TabStop = false;
+            this.boxTwentyPence.Click += new System.EventHandler(this.boxTwentyPence_Click);
             // 
             // boxOnePound
             // 
@@ -296,6 +301,7 @@
             this.boxOnePound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxOnePound.TabIndex = 9;
             this.boxOnePound.TabStop = false;
+            this.boxOnePound.Click += new System.EventHandler(this.boxOnePound_Click);
             // 
             // label8
             // 
