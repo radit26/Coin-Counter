@@ -25,14 +25,8 @@ namespace ProgrammingAssessment
         private int i6 = 0;
         private int i7 = 0;
         private int i8 = 0;
-        private int intTotalValue1p = 0;
-        private int intTotalValue2p = 0;
-        private int intTotalValue5p = 0;
-        private int intTotalValue10p = 0;
-        private int intTotalValue20p = 0;
-        private int intTotalValue50p = 0;
-        private int intTotalValue1Pound = 0;
-        private int intTotalValue2Pounds = 0;
+        private int intTotalValue = 0;
+        
 
         private void boxOnePence_Click(object sender, EventArgs e)
         {
@@ -45,9 +39,14 @@ namespace ProgrammingAssessment
                 i++;
                 label1.Text = i.ToString();
 
-                intTotalValue1p++;
-                Convert.ToInt32(intTotalValue1p).ToString();
-                txtTotalValue.Text = intTotalValue1p.ToString();
+               
+                intTotalValue += 1;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
+
+
             }
         }
 
@@ -62,9 +61,13 @@ namespace ProgrammingAssessment
                 i2++;
                 label2.Text = i2.ToString();
 
-                intTotalValue2p += 2;
-                Convert.ToInt32(intTotalValue2p).ToString();
-                txtTotalValue.Text = intTotalValue2p.ToString();
+                intTotalValue += 2;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
+
+
             }
         }
 
@@ -79,8 +82,11 @@ namespace ProgrammingAssessment
                 i3++;
                 label3.Text = i3.ToString();
 
-                intTotalValue5p += 5;
-                txtTotalValue.Text = intTotalValue5p.ToString();
+                intTotalValue += 5;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
 
@@ -95,8 +101,11 @@ namespace ProgrammingAssessment
                 i4++;
                 label4.Text = i4.ToString();
 
-                intTotalValue10p += 10;
-                txtTotalValue.Text = intTotalValue10p.ToString();
+                intTotalValue += 10;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
 
@@ -111,8 +120,11 @@ namespace ProgrammingAssessment
                 i5++;
                 label5.Text = i5.ToString();
 
-                intTotalValue20p += 20;
-                txtTotalValue.Text = intTotalValue20p.ToString();
+                intTotalValue += 20;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
 
@@ -127,8 +139,11 @@ namespace ProgrammingAssessment
                 i6++;
                 label6.Text = i6.ToString();
 
-                intTotalValue50p += 50;
-                txtTotalValue.Text = intTotalValue50p.ToString();
+                intTotalValue += 50;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
 
@@ -143,8 +158,11 @@ namespace ProgrammingAssessment
                 i7++;
                 label7.Text = i7.ToString();
 
-                intTotalValue1Pound += 100;
-                txtTotalValue.Text = intTotalValue1Pound.ToString();
+                intTotalValue += 100;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
 
@@ -159,8 +177,10 @@ namespace ProgrammingAssessment
                 i8++;
                 label8.Text = i8.ToString();
 
-                intTotalValue2Pounds += 200;
-                txtTotalValue.Text = intTotalValue2Pounds.ToString();
+                intTotalValue += 200;
+                txtTotalValue.Text = intTotalValue.ToString();
+
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
         }
     }

@@ -30,18 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.boxOnePence = new System.Windows.Forms.PictureBox();
-            this.boxTwoPence = new System.Windows.Forms.PictureBox();
-            this.boxTenPence = new System.Windows.Forms.PictureBox();
-            this.boxFivePence = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtTotalValue = new System.Windows.Forms.TextBox();
             this.boxTwoPounds = new System.Windows.Forms.PictureBox();
             this.boxFiftyPence = new System.Windows.Forms.PictureBox();
             this.boxTwentyPence = new System.Windows.Forms.PictureBox();
             this.boxOnePound = new System.Windows.Forms.PictureBox();
+            this.boxTenPence = new System.Windows.Forms.PictureBox();
+            this.boxFivePence = new System.Windows.Forms.PictureBox();
+            this.boxTwoPence = new System.Windows.Forms.PictureBox();
+            this.boxOnePence = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -66,28 +70,23 @@
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.txtTotalValue = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtNoOfCredits = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCostPerCredit = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.boxOnePence)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxTwoPence)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxTenPence)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxFivePence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxTwoPounds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxFiftyPence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxTwentyPence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxOnePound)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxTenPence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxFivePence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxTwoPence)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxOnePence)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -96,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -122,6 +122,185 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coins";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(325, 472);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 17);
+            this.label12.TabIndex = 25;
+            this.label12.Text = "p";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(224, 472);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 17);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "£";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(178, 469);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 17);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "p";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(20, 467);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 17);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Total Value";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(247, 469);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(72, 22);
+            this.textBox10.TabIndex = 21;
+            // 
+            // txtTotalValue
+            // 
+            this.txtTotalValue.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtTotalValue.Location = new System.Drawing.Point(117, 467);
+            this.txtTotalValue.Name = "txtTotalValue";
+            this.txtTotalValue.ReadOnly = true;
+            this.txtTotalValue.Size = new System.Drawing.Size(55, 22);
+            this.txtTotalValue.TabIndex = 20;
+            this.txtTotalValue.Text = "0";
+            this.txtTotalValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // boxTwoPounds
+            // 
+            this.boxTwoPounds.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxTwoPounds.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwoPounds.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPounds.Image")));
+            this.boxTwoPounds.Location = new System.Drawing.Point(257, 369);
+            this.boxTwoPounds.Name = "boxTwoPounds";
+            this.boxTwoPounds.Size = new System.Drawing.Size(86, 80);
+            this.boxTwoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxTwoPounds.TabIndex = 12;
+            this.boxTwoPounds.TabStop = false;
+            this.boxTwoPounds.Click += new System.EventHandler(this.boxTwoPounds_Click);
+            // 
+            // boxFiftyPence
+            // 
+            this.boxFiftyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxFiftyPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxFiftyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxFiftyPence.Image")));
+            this.boxFiftyPence.Location = new System.Drawing.Point(257, 202);
+            this.boxFiftyPence.Name = "boxFiftyPence";
+            this.boxFiftyPence.Size = new System.Drawing.Size(86, 77);
+            this.boxFiftyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxFiftyPence.TabIndex = 11;
+            this.boxFiftyPence.TabStop = false;
+            this.boxFiftyPence.Click += new System.EventHandler(this.boxFiftyPence_Click);
+            // 
+            // boxTwentyPence
+            // 
+            this.boxTwentyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxTwentyPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwentyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwentyPence.Image")));
+            this.boxTwentyPence.Location = new System.Drawing.Point(257, 102);
+            this.boxTwentyPence.Name = "boxTwentyPence";
+            this.boxTwentyPence.Size = new System.Drawing.Size(86, 82);
+            this.boxTwentyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxTwentyPence.TabIndex = 10;
+            this.boxTwentyPence.TabStop = false;
+            this.boxTwentyPence.Click += new System.EventHandler(this.boxTwentyPence_Click);
+            // 
+            // boxOnePound
+            // 
+            this.boxOnePound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxOnePound.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxOnePound.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePound.Image")));
+            this.boxOnePound.Location = new System.Drawing.Point(257, 284);
+            this.boxOnePound.Name = "boxOnePound";
+            this.boxOnePound.Size = new System.Drawing.Size(86, 79);
+            this.boxOnePound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxOnePound.TabIndex = 9;
+            this.boxOnePound.TabStop = false;
+            this.boxOnePound.Click += new System.EventHandler(this.boxOnePound_Click);
+            // 
+            // boxTenPence
+            // 
+            this.boxTenPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxTenPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTenPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTenPence.Image")));
+            this.boxTenPence.Location = new System.Drawing.Point(36, 365);
+            this.boxTenPence.Name = "boxTenPence";
+            this.boxTenPence.Size = new System.Drawing.Size(81, 75);
+            this.boxTenPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxTenPence.TabIndex = 7;
+            this.boxTenPence.TabStop = false;
+            this.boxTenPence.Click += new System.EventHandler(this.boxTenPence_Click);
+            // 
+            // boxFivePence
+            // 
+            this.boxFivePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxFivePence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxFivePence.Image = ((System.Drawing.Image)(resources.GetObject("boxFivePence.Image")));
+            this.boxFivePence.Location = new System.Drawing.Point(36, 284);
+            this.boxFivePence.Name = "boxFivePence";
+            this.boxFivePence.Size = new System.Drawing.Size(81, 75);
+            this.boxFivePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxFivePence.TabIndex = 6;
+            this.boxFivePence.TabStop = false;
+            this.boxFivePence.Click += new System.EventHandler(this.boxFivePence_Click);
+            // 
+            // boxTwoPence
+            // 
+            this.boxTwoPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxTwoPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwoPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPence.Image")));
+            this.boxTwoPence.Location = new System.Drawing.Point(36, 202);
+            this.boxTwoPence.Name = "boxTwoPence";
+            this.boxTwoPence.Size = new System.Drawing.Size(81, 70);
+            this.boxTwoPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxTwoPence.TabIndex = 4;
+            this.boxTwoPence.TabStop = false;
+            this.boxTwoPence.Click += new System.EventHandler(this.boxTwoPence_Click);
+            // 
+            // boxOnePence
+            // 
+            this.boxOnePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.boxOnePence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxOnePence.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePence.Image")));
+            this.boxOnePence.Location = new System.Drawing.Point(36, 102);
+            this.boxOnePence.Name = "boxOnePence";
+            this.boxOnePence.Size = new System.Drawing.Size(81, 82);
+            this.boxOnePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.boxOnePence.TabIndex = 3;
+            this.boxOnePence.TabStop = false;
+            this.boxOnePence.Click += new System.EventHandler(this.boxOnePence_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(62, 21);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(267, 108);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "Click a Coin To Buy Credits";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
@@ -156,152 +335,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Coins Entered";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.txtCostPerCredit);
-            this.groupBox3.Location = new System.Drawing.Point(12, 525);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(386, 93);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Credits";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 624);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(383, 58);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "RESET";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(62, 21);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(267, 108);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Click a Coin To Buy Credits";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // boxOnePence
-            // 
-            this.boxOnePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxOnePence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxOnePence.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePence.Image")));
-            this.boxOnePence.Location = new System.Drawing.Point(36, 102);
-            this.boxOnePence.Name = "boxOnePence";
-            this.boxOnePence.Size = new System.Drawing.Size(81, 82);
-            this.boxOnePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxOnePence.TabIndex = 3;
-            this.boxOnePence.TabStop = false;
-            this.boxOnePence.Click += new System.EventHandler(this.boxOnePence_Click);
-            // 
-            // boxTwoPence
-            // 
-            this.boxTwoPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwoPence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxTwoPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPence.Image")));
-            this.boxTwoPence.Location = new System.Drawing.Point(36, 202);
-            this.boxTwoPence.Name = "boxTwoPence";
-            this.boxTwoPence.Size = new System.Drawing.Size(81, 70);
-            this.boxTwoPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxTwoPence.TabIndex = 4;
-            this.boxTwoPence.TabStop = false;
-            this.boxTwoPence.Click += new System.EventHandler(this.boxTwoPence_Click);
-            // 
-            // boxTenPence
-            // 
-            this.boxTenPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTenPence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxTenPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTenPence.Image")));
-            this.boxTenPence.Location = new System.Drawing.Point(36, 365);
-            this.boxTenPence.Name = "boxTenPence";
-            this.boxTenPence.Size = new System.Drawing.Size(81, 75);
-            this.boxTenPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxTenPence.TabIndex = 7;
-            this.boxTenPence.TabStop = false;
-            this.boxTenPence.Click += new System.EventHandler(this.boxTenPence_Click);
-            // 
-            // boxFivePence
-            // 
-            this.boxFivePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxFivePence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxFivePence.Image = ((System.Drawing.Image)(resources.GetObject("boxFivePence.Image")));
-            this.boxFivePence.Location = new System.Drawing.Point(36, 284);
-            this.boxFivePence.Name = "boxFivePence";
-            this.boxFivePence.Size = new System.Drawing.Size(81, 75);
-            this.boxFivePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxFivePence.TabIndex = 6;
-            this.boxFivePence.TabStop = false;
-            this.boxFivePence.Click += new System.EventHandler(this.boxFivePence_Click);
-            // 
-            // boxTwoPounds
-            // 
-            this.boxTwoPounds.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwoPounds.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxTwoPounds.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPounds.Image")));
-            this.boxTwoPounds.Location = new System.Drawing.Point(257, 369);
-            this.boxTwoPounds.Name = "boxTwoPounds";
-            this.boxTwoPounds.Size = new System.Drawing.Size(86, 80);
-            this.boxTwoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxTwoPounds.TabIndex = 12;
-            this.boxTwoPounds.TabStop = false;
-            this.boxTwoPounds.Click += new System.EventHandler(this.boxTwoPounds_Click);
-            // 
-            // boxFiftyPence
-            // 
-            this.boxFiftyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxFiftyPence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxFiftyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxFiftyPence.Image")));
-            this.boxFiftyPence.Location = new System.Drawing.Point(257, 202);
-            this.boxFiftyPence.Name = "boxFiftyPence";
-            this.boxFiftyPence.Size = new System.Drawing.Size(86, 77);
-            this.boxFiftyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxFiftyPence.TabIndex = 11;
-            this.boxFiftyPence.TabStop = false;
-            this.boxFiftyPence.Click += new System.EventHandler(this.boxFiftyPence_Click);
-            // 
-            // boxTwentyPence
-            // 
-            this.boxTwentyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwentyPence.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxTwentyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwentyPence.Image")));
-            this.boxTwentyPence.Location = new System.Drawing.Point(257, 102);
-            this.boxTwentyPence.Name = "boxTwentyPence";
-            this.boxTwentyPence.Size = new System.Drawing.Size(86, 82);
-            this.boxTwentyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxTwentyPence.TabIndex = 10;
-            this.boxTwentyPence.TabStop = false;
-            this.boxTwentyPence.Click += new System.EventHandler(this.boxTwentyPence_Click);
-            // 
-            // boxOnePound
-            // 
-            this.boxOnePound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxOnePound.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.boxOnePound.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePound.Image")));
-            this.boxOnePound.Location = new System.Drawing.Point(257, 284);
-            this.boxOnePound.Name = "boxOnePound";
-            this.boxOnePound.Size = new System.Drawing.Size(86, 79);
-            this.boxOnePound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.boxOnePound.TabIndex = 9;
-            this.boxOnePound.TabStop = false;
-            this.boxOnePound.Click += new System.EventHandler(this.boxOnePound_Click);
             // 
             // label8
             // 
@@ -551,61 +584,38 @@
             this.pictureBox19.TabIndex = 11;
             this.pictureBox19.TabStop = false;
             // 
-            // label12
+            // groupBox3
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(325, 472);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 17);
-            this.label12.TabIndex = 25;
-            this.label12.Text = "p";
+            this.groupBox3.Controls.Add(this.txtNoOfCredits);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.txtCostPerCredit);
+            this.groupBox3.Location = new System.Drawing.Point(12, 525);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(386, 93);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Credits";
             // 
-            // label11
+            // txtNoOfCredits
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(224, 472);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 17);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "£";
+            this.txtNoOfCredits.Location = new System.Drawing.Point(328, 59);
+            this.txtNoOfCredits.Name = "txtNoOfCredits";
+            this.txtNoOfCredits.Size = new System.Drawing.Size(43, 22);
+            this.txtNoOfCredits.TabIndex = 22;
+            this.txtNoOfCredits.Text = "0";
+            this.txtNoOfCredits.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label10
+            // label15
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(178, 469);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 17);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "p";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 467);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 17);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Total Value";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(247, 469);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(72, 22);
-            this.textBox10.TabIndex = 21;
-            // 
-            // txtTotalValue
-            // 
-            this.txtTotalValue.Location = new System.Drawing.Point(117, 467);
-            this.txtTotalValue.Name = "txtTotalValue";
-            this.txtTotalValue.Size = new System.Drawing.Size(55, 22);
-            this.txtTotalValue.TabIndex = 20;
-            this.txtTotalValue.Text = "0";
-            this.txtTotalValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 62);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(281, 15);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "You Presently Have This Number of Credits";
             // 
             // label14
             // 
@@ -636,24 +646,16 @@
             this.txtCostPerCredit.Text = "0";
             this.txtCostPerCredit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label15
+            // button1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.3F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 62);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(307, 16);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "You Presently Have This Number of Credits";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(319, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(52, 22);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(15, 624);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(383, 58);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -672,18 +674,16 @@
             this.Text = "Money Credit Counter v2.0";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.boxOnePence)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxTwoPence)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxTenPence)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.boxFivePence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxTwoPounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxFiftyPence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxTwentyPence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxOnePound)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxTenPence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxFivePence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxTwoPence)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.boxOnePence)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -692,6 +692,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -740,7 +742,7 @@
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNoOfCredits;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
