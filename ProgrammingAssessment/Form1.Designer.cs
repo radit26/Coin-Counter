@@ -34,7 +34,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtPounds = new System.Windows.Forms.TextBox();
             this.txtTotalValue = new System.Windows.Forms.TextBox();
             this.boxTwoPounds = new System.Windows.Forms.PictureBox();
             this.boxFiftyPence = new System.Windows.Forms.PictureBox();
@@ -105,7 +105,7 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtPounds);
             this.groupBox1.Controls.Add(this.txtTotalValue);
             this.groupBox1.Controls.Add(this.boxTwoPounds);
             this.groupBox1.Controls.Add(this.boxFiftyPence);
@@ -163,12 +163,12 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Total Value";
             // 
-            // textBox10
+            // txtPounds
             // 
-            this.textBox10.Location = new System.Drawing.Point(247, 469);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(72, 22);
-            this.textBox10.TabIndex = 21;
+            this.txtPounds.Location = new System.Drawing.Point(247, 469);
+            this.txtPounds.Name = "txtPounds";
+            this.txtPounds.Size = new System.Drawing.Size(72, 22);
+            this.txtPounds.TabIndex = 21;
             // 
             // txtTotalValue
             // 
@@ -705,7 +705,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtPounds;
         private System.Windows.Forms.TextBox txtTotalValue;
         private System.Windows.Forms.PictureBox boxTwoPounds;
         private System.Windows.Forms.PictureBox boxFiftyPence;

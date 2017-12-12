@@ -26,6 +26,7 @@ namespace ProgrammingAssessment
         private int i7 = 0;
         private int i8 = 0;
         private int intTotalValue = 0;
+        private double dblPounds = 0;
         
 
         private void boxOnePence_Click(object sender, EventArgs e)
@@ -43,6 +44,9 @@ namespace ProgrammingAssessment
                 intTotalValue += 1;
                 txtTotalValue.Text = intTotalValue.ToString();
 
+                dblPounds += 0.01;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
 
@@ -64,6 +68,10 @@ namespace ProgrammingAssessment
                 intTotalValue += 2;
                 txtTotalValue.Text = intTotalValue.ToString();
 
+                dblPounds += 0.02;
+
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
 
@@ -85,6 +93,9 @@ namespace ProgrammingAssessment
                 intTotalValue += 5;
                 txtTotalValue.Text = intTotalValue.ToString();
 
+                dblPounds += 0.05;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
@@ -103,6 +114,10 @@ namespace ProgrammingAssessment
 
                 intTotalValue += 10;
                 txtTotalValue.Text = intTotalValue.ToString();
+
+                dblPounds += 0.1;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
@@ -123,6 +138,10 @@ namespace ProgrammingAssessment
                 intTotalValue += 20;
                 txtTotalValue.Text = intTotalValue.ToString();
 
+                dblPounds += 0.2;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
+
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
@@ -141,6 +160,10 @@ namespace ProgrammingAssessment
 
                 intTotalValue += 50;
                 txtTotalValue.Text = intTotalValue.ToString();
+
+                dblPounds += 0.5;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
@@ -161,6 +184,10 @@ namespace ProgrammingAssessment
                 intTotalValue += 100;
                 txtTotalValue.Text = intTotalValue.ToString();
 
+                dblPounds++;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
+
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
@@ -179,6 +206,10 @@ namespace ProgrammingAssessment
 
                 intTotalValue += 200;
                 txtTotalValue.Text = intTotalValue.ToString();
+
+                dblPounds += 2;
+                txtPounds.Text = dblPounds.ToString();
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
 
                 txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
             }
