@@ -16,7 +16,7 @@ namespace ProgrammingAssessment
         {
             InitializeComponent();
         }
-
+        //Create integers to be used 
         private int i = 0;
         private int i2 = 0;
         private int i3 = 0;
@@ -31,24 +31,25 @@ namespace ProgrammingAssessment
 
         private void boxOnePence_Click(object sender, EventArgs e)
         {
-            if (txtCostPerCredit.Text == "" || txtCostPerCredit.Text == "0")
+            if (txtCostPerCredit.Text == "" || txtCostPerCredit.Text == "0") //Sets the condition that the textbox has to be filled
             {
-                MessageBox.Show("You have not set the cost per credit");
+                MessageBox.Show("You have not set the cost per credit"); //Shows a box with a message if the user does not type in a number in the textbox
             }
             else
             {
-                i++;
-                label1.Text = i.ToString();
+                i++; //This will increment the integer i by 1
+                label1.Text = i.ToString(); //Puts the integer i into the label and converts in into a string
 
                
-                intTotalValue += 1;
-                txtTotalValue.Text = intTotalValue.ToString();
+                intTotalValue += 1; 
+                txtTotalValue.Text = intTotalValue.ToString(); //Converts the text inside the txtTotalValue textbox into a string
 
-                dblPounds += 0.01;
-                txtPounds.Text = dblPounds.ToString();
-                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text));
+                dblPounds += 0.01; //The double variable dblPounds will be added by 0.01
+                txtPounds.Text = dblPounds.ToString(); //Inserts dblPounds into the textbox called txtPounds and converts it into a string 
+                txtPounds.Text = String.Format("{0:n2}", Convert.ToDouble(txtPounds.Text)); //Formats the currency
 
-                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString();
+                //Fill the txtNoOfCredits textbox with the result of the values in txtTotalValue divided by the values in txtCostPerCredit
+                txtNoOfCredits.Text = (int.Parse(txtTotalValue.Text) / int.Parse(txtCostPerCredit.Text)).ToString(); 
 
 
             }

@@ -118,7 +118,7 @@
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(386, 507);
+            this.groupBox1.Size = new System.Drawing.Size(410, 537);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coins";
@@ -127,7 +127,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(325, 472);
+            this.label12.Location = new System.Drawing.Point(344, 504);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(17, 17);
             this.label12.TabIndex = 25;
@@ -137,7 +137,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(224, 472);
+            this.label11.Location = new System.Drawing.Point(243, 507);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(17, 17);
             this.label11.TabIndex = 24;
@@ -147,7 +147,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(178, 469);
+            this.label10.Location = new System.Drawing.Point(174, 507);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(17, 17);
             this.label10.TabIndex = 23;
@@ -157,7 +157,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 467);
+            this.label9.Location = new System.Drawing.Point(16, 507);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 17);
             this.label9.TabIndex = 22;
@@ -165,15 +165,17 @@
             // 
             // txtPounds
             // 
-            this.txtPounds.Location = new System.Drawing.Point(247, 469);
+            this.txtPounds.Location = new System.Drawing.Point(266, 504);
             this.txtPounds.Name = "txtPounds";
             this.txtPounds.Size = new System.Drawing.Size(72, 22);
             this.txtPounds.TabIndex = 21;
+            this.txtPounds.Text = "0.00";
+            this.txtPounds.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTotalValue
             // 
             this.txtTotalValue.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTotalValue.Location = new System.Drawing.Point(117, 467);
+            this.txtTotalValue.Location = new System.Drawing.Point(113, 504);
             this.txtTotalValue.Name = "txtTotalValue";
             this.txtTotalValue.ReadOnly = true;
             this.txtTotalValue.Size = new System.Drawing.Size(55, 22);
@@ -184,9 +186,9 @@
             // boxTwoPounds
             // 
             this.boxTwoPounds.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwoPounds.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwoPounds.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxTwoPounds.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPounds.Image")));
-            this.boxTwoPounds.Location = new System.Drawing.Point(257, 369);
+            this.boxTwoPounds.Location = new System.Drawing.Point(257, 387);
             this.boxTwoPounds.Name = "boxTwoPounds";
             this.boxTwoPounds.Size = new System.Drawing.Size(86, 80);
             this.boxTwoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -197,9 +199,9 @@
             // boxFiftyPence
             // 
             this.boxFiftyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxFiftyPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxFiftyPence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxFiftyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxFiftyPence.Image")));
-            this.boxFiftyPence.Location = new System.Drawing.Point(257, 202);
+            this.boxFiftyPence.Location = new System.Drawing.Point(256, 209);
             this.boxFiftyPence.Name = "boxFiftyPence";
             this.boxFiftyPence.Size = new System.Drawing.Size(86, 77);
             this.boxFiftyPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -210,7 +212,7 @@
             // boxTwentyPence
             // 
             this.boxTwentyPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwentyPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwentyPence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxTwentyPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwentyPence.Image")));
             this.boxTwentyPence.Location = new System.Drawing.Point(257, 102);
             this.boxTwentyPence.Name = "boxTwentyPence";
@@ -223,9 +225,9 @@
             // boxOnePound
             // 
             this.boxOnePound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxOnePound.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxOnePound.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxOnePound.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePound.Image")));
-            this.boxOnePound.Location = new System.Drawing.Point(257, 284);
+            this.boxOnePound.Location = new System.Drawing.Point(257, 297);
             this.boxOnePound.Name = "boxOnePound";
             this.boxOnePound.Size = new System.Drawing.Size(86, 79);
             this.boxOnePound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,11 +238,11 @@
             // boxTenPence
             // 
             this.boxTenPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTenPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTenPence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxTenPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTenPence.Image")));
-            this.boxTenPence.Location = new System.Drawing.Point(36, 365);
+            this.boxTenPence.Location = new System.Drawing.Point(36, 387);
             this.boxTenPence.Name = "boxTenPence";
-            this.boxTenPence.Size = new System.Drawing.Size(81, 75);
+            this.boxTenPence.Size = new System.Drawing.Size(81, 81);
             this.boxTenPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.boxTenPence.TabIndex = 7;
             this.boxTenPence.TabStop = false;
@@ -249,9 +251,9 @@
             // boxFivePence
             // 
             this.boxFivePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxFivePence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxFivePence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxFivePence.Image = ((System.Drawing.Image)(resources.GetObject("boxFivePence.Image")));
-            this.boxFivePence.Location = new System.Drawing.Point(36, 284);
+            this.boxFivePence.Location = new System.Drawing.Point(36, 297);
             this.boxFivePence.Name = "boxFivePence";
             this.boxFivePence.Size = new System.Drawing.Size(81, 75);
             this.boxFivePence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -262,9 +264,9 @@
             // boxTwoPence
             // 
             this.boxTwoPence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxTwoPence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxTwoPence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxTwoPence.Image = ((System.Drawing.Image)(resources.GetObject("boxTwoPence.Image")));
-            this.boxTwoPence.Location = new System.Drawing.Point(36, 202);
+            this.boxTwoPence.Location = new System.Drawing.Point(36, 209);
             this.boxTwoPence.Name = "boxTwoPence";
             this.boxTwoPence.Size = new System.Drawing.Size(81, 70);
             this.boxTwoPence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +277,7 @@
             // boxOnePence
             // 
             this.boxOnePence.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.boxOnePence.Cursor = System.Windows.Forms.Cursors.Default;
+            this.boxOnePence.Cursor = System.Windows.Forms.Cursors.Hand;
             this.boxOnePence.Image = ((System.Drawing.Image)(resources.GetObject("boxOnePence.Image")));
             this.boxOnePence.Location = new System.Drawing.Point(36, 102);
             this.boxOnePence.Name = "boxOnePence";
@@ -293,6 +295,7 @@
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuText;
             this.textBox3.Location = new System.Drawing.Point(62, 21);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -329,9 +332,9 @@
             this.groupBox2.Controls.Add(this.pictureBox17);
             this.groupBox2.Controls.Add(this.pictureBox16);
             this.groupBox2.Controls.Add(this.pictureBox19);
-            this.groupBox2.Location = new System.Drawing.Point(414, 12);
+            this.groupBox2.Location = new System.Drawing.Point(443, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(285, 682);
+            this.groupBox2.Size = new System.Drawing.Size(285, 713);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Coins Entered";
@@ -591,16 +594,16 @@
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.txtCostPerCredit);
-            this.groupBox3.Location = new System.Drawing.Point(12, 525);
+            this.groupBox3.Location = new System.Drawing.Point(12, 555);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(386, 93);
+            this.groupBox3.Size = new System.Drawing.Size(410, 93);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Credits";
             // 
             // txtNoOfCredits
             // 
-            this.txtNoOfCredits.Location = new System.Drawing.Point(328, 59);
+            this.txtNoOfCredits.Location = new System.Drawing.Point(347, 57);
             this.txtNoOfCredits.Name = "txtNoOfCredits";
             this.txtNoOfCredits.Size = new System.Drawing.Size(43, 22);
             this.txtNoOfCredits.TabIndex = 22;
@@ -610,7 +613,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(6, 62);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(281, 15);
@@ -649,10 +652,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(15, 624);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(15, 667);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(383, 58);
+            this.button1.Size = new System.Drawing.Size(407, 58);
             this.button1.TabIndex = 3;
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = false;
@@ -662,7 +665,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(711, 706);
+            this.ClientSize = new System.Drawing.Size(740, 737);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
